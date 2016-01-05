@@ -1,0 +1,11 @@
+.demo-container {
+	margin: 0;
+	width: 100%;
+}
+.compare {
+	margin-left:30px
+}
+.newflotTip {
+	background-color: "#777777" !important;
+	color: "#ffffff" !important;
+}

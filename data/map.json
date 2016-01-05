@@ -1,0 +1,12 @@
+{
+  "map": [
+    {
+      "item": "data.name",
+      "convertTo": "newname"
+    },
+    {
+      "item": "data.value",
+      "convertTo": "newvalue"
+    }
+  ]
+}

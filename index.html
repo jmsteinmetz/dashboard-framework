@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>DashboardRobot</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/chart.min.js"></script>
+    <script src="/js/chart.StackedBar.js"></script>
+    <script src="/js/sample-data.js"></script>
+    <script src="/js/functions.js"></script>
+    <script src="/js/main.js"></script>
+    <style>
+    .download {
+        display: none
+    }
+    
+    canvas {
+        width: 100% !important;
+        color: #fff;
+        max-height: 262px !important;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <div class="header">
+            <div class="container">
+                <div class="col-sm-12">
+                    <h3><img src="/img/robot-logo.png" style="height:26px"></h3><span class="pull-right"><span class="glyphicon glyphicon glyphicon-cog" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+        <!-- Items added here -->
+        <div class="container">
+            <!-- Titlebar -->
+            <div class="col-sm-12 titlebar">
+                <div class="col-sm-6">
+                    <span class="title">[Report Name]</span>
+                    <br><span class="date" data="date-range">[start] - [end]</span>
+                </div>
+                <div class="col-sm-6 reportdetails">
+                    <div class="col-sm-12 caption removeleftpadding">Client <span class="client" data="client">[fieldname value]</span></div>
+                    <div class="col-sm-12 caption removeleftpadding">Audience Size <span class="detail" data="detail">[fieldname caption value]</span></div>
+                        
+                </div>
+            </div>
+            <!-- End Titlebar -->
+            <div id="main" class="row"></div>
+            <!-- end items -->
+        </div>
+        <div class="container footer">
+            <div class="col-sm-12"><span id="copyrightText" class="pull-right"></span></div>
+        </div>
+    </div>
+    <!-- /container -->
+    <!-- Placed at the end of the document so the pages load faster -->
+</body>
+
+</html>

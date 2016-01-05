@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'proximanovalight';
+    src: url('/fonts/proximanova-light-webfont.eot');
+    src: url('/fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/proximanova-light-webfont.woff') format('woff'), url('/fonts/proximanova-light-webfont.ttf') format('truetype'), url('/fonts/proximanova-light-webfont.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'proximanovareg';
+    src: url('/fonts/proximanova-reg-webfont.eot');
+    src: url('/fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/proximanova-reg-webfont.woff') format('woff'), url('/fonts/proximanova-reg-webfont.ttf') format('truetype'), url('/fonts/proximanova-reg-webfont.svg#webfont') format('svg');
+}
+
+
+/* Titlebar */
+
+.titlebar {
+    padding: 17px 0px;
+    border: 0px solid #e2e2e2;
+    max-height: 150px;
+}
+
+.titlebar .title {
+    font-family: 'proximanovalight';
+    font-size: 34px;
+}
+
+.titlebar .download {
+    position: relative;
+    top: 15px;
+    color: #000000;
+    border: 1px solid #e2e2e2;
+    padding: 12px 17px;
+    border-radius: 8px;
+}
+
+.reportdetails {
+    padding: 12px 0px 0px;
+}
+
+.reportdetails .caption span {
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.removeleftpadding {
+    padding-left: 0px;
+}
+
+.caption {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.58);
+    font-weight: normal;
+}
+
+
+/* End Titlebar */
+
+
+/* End Fonts */
+
+body {
+    font-family: 'proximanovareg';
+}
+
+body {
+    background-color: #41b4c6;
+    color: #fff;
+}
+
+#layout {
+    margin: 0;
+    padding: 0
+}
+
+.header {
+    height: 45px;
+    background-color: #2392a5
+}
+
+.header h3 {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.header span {
+    line-height: 45px;
+}
+
+/* Panel CSS */
+.panel {
+    /*background-color: #41b4c6;*/
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.panel-heading {
+    padding: 6px 15px;
+    border: 0;
+}
+
+.panel-default>.panel-heading {
+    /* background-color: #82cac7; */
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.panel-footer {
+    /* background-color: #3D96A5; */
+    background-color: transparent;
+    font-size: 11px;
+    border: 0;
+}
+
+.panel-footer span {
+    font-size: 12px;
+}
+
+.panel-body {
+    min-height: 150px;
+}
+
+.panel-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.zone {
+    /*max-height: 300px;*/
+    margin-top: 20px;
+}
+
+.chart {
+    height: 250px;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #e2e2e2;
+    padding: 0px;
+}
+
+.chart.noborders {
+    border-width: 0px;
+}
+
+.content {
+    padding: 30px;
+}
+
+.chart-legend li span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+
+/* Footer */
+
+.container.footer {
+    margin-top: 20px;
+}

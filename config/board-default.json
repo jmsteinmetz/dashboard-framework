@@ -1,0 +1,104 @@
+{
+    "report": [{
+        "title": "Social Media Progress Report",
+        "start": "Dec. 20th, 2015",
+        "end": "Dec. 27th, 2015",
+        "client": "Widgets, Inc",
+        "detail": "1.6M"
+    }],
+    "options": [{
+        "layout": "container-fluid",
+        "copyrightText": "&copy; John Steinmetz 2015",
+        "showBorders": "no"
+    }],
+    "sections": [{
+        "id": "1001",
+        "title": "Twitter Engagement",
+        "div": "item-a",
+        "xs": 12,
+        "sm": 12,
+        "md": 6,
+        "lg": 6,
+        "chartType": "bar",
+        "dataObject": "line1",
+        "display": "yes"
+    }, {
+        "id": "1002",
+        "title": "Share of Voice",
+        "div": "item-b",
+        "xs": 12,
+        "sm": 12,
+        "md": 6,
+        "lg": 6,
+        "chartType": "pie",
+        "dataObject": "dataPie",
+        "display": "yes"
+    }, {
+        "id": "1003",
+        "title": "Number of Followers (W-O-W)",
+        "div": "item-c",
+        "xs": 12,
+        "sm": 12,
+        "md": 6,
+        "lg": 6,
+        "chartType": "line",
+        "dataObject": "line1",
+        "display": "yes"
+    }, {
+        "id": "1004",
+        "title": "Sentiment",
+        "div": "item-d",
+        "xs": 12,
+        "sm": 12,
+        "md": 6,
+        "lg": 6,
+        "chartType": "bar",
+        "data": "",
+        "dataObject": "dataStacked",
+        "display": "yes"
+    }, {
+        "id": "1005",
+        "title": "Facebook Likes (W-O-W)",
+        "div": "item-e",
+        "xs": 12,
+        "sm": 12,
+        "md": 6,
+        "lg": 6,
+        "chartType": "line",
+        "dataObject": "line2",
+        "display": "yes"
+    }, {
+        "id": "1006",
+        "title": "Facebook Engagement",
+        "div": "item-f",
+        "xs": 12,
+        "sm": 12,
+        "md": 6,
+        "lg": 6,
+        "chartType": "line",
+        "dataObject": "line1",
+        "display": "yes"
+    }, {
+        "id": "1007",
+        "title": "Instagram Followers",
+        "div": "item-g",
+        "xs": 12,
+        "sm": 12,
+        "md": 6,
+        "lg": 6,
+        "chartType": "line",
+        "dataObject": "line2",
+        "display": "yes"
+    }, {
+        "id": "1008",
+        "title": "Instagram Engagement",
+        "div": "item-h",
+        "xs": 12,
+        "sm": 12,
+        "md": 6,
+        "lg": 6,
+        "chartType": "line",
+        "dataObject": "line1",
+        "display": "yes"
+    }]
+}

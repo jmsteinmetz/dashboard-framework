@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "name": "John Smith",
+      "value": 100
+    },
+    {
+      "name": "Jane Doe",
+      "value": 200
+    }
+  ]
+}

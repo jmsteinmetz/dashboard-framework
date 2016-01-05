@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Predictive Models - Bazaarvoice</title>
+    <link href="/css/examples.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/override.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../../excanvas.min.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="/js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/jquery.flot.resize.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/jquery.flot.stack.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/jquery.flot.autoMarkings.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/jquery.flot.tooltip.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <h2><b>Cookie Monster : Predictive Models</b></h2>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-5">
+                <h3>Total Events (historical)</h3>
+                <div class="demo-container">
+                    <div id="charttotalhistorical" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of events that were collected in 2014.</p>
+            </div>
+            <div class="col-md-2">
+                <h3>Comparison</h3>
+                <hr>
+                <div class="compare">
+                    <p>9/2/2014: <span class="">0,000,000</span></p>
+                    <p>9/2/2015: <span class="">0,000,000</span></p>
+                </div>
+                <hr>
+                <div class="compare">
+                    <p>Today: <span class="">1,000,000</span></p>
+                    <p>1 yr ago: <span class="">800,000</span></p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Total Events Prediction 2015</h3>
+                <div class="demo-container">
+                    <div id="charttotal" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of events that we predict in 2015.</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-5">
+                <h3>Total Impressions (historical)</h3>
+                <div class="demo-container">
+                    <div id="chartimphistorical" class="demo-placeholder"></div>
+                    <div id="legendContainer" style="height:35px; width:150px"></div>
+                </div>
+                <p>The data above represents the total number of impressions that were collected in 2014.</p>
+            </div>
+            <div class="col-md-2">
+                <h3>Comparison</h3>
+                <hr>
+                <div class="compare">
+                    <p>9/2/2014: <span class="">0,000,000</span></p>
+                    <p>9/2/2015: <span class="">0,000,000</span></p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Total Impressions Prediction 2015</h3>
+                <div class="demo-container">
+                    <div id="chartimpressions" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of impressions that we predict in 2015.</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-5">
+                <h3>Total Pageviews (historical)</h3>
+                <div class="demo-container">
+                    <div id="chartpagehistorical" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of pageviews that were collected in 2014.</p>
+            </div>
+            <div class="col-md-2">
+                <h3>Comparison</h3>
+                <hr>
+                <div class="compare">
+                    <p>9/2/2014: <span class="">0,000,000</span></p>
+                    <p>9/2/2015: <span class="">0,000,000</span></p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Total Pageviews Prediction 2015</h3>
+                <div class="demo-container">
+                    <div id="chartpageviews" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of pageviews that we predict in 2015.</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-5">
+                <h3>Total Errors (historical)</h3>
+                <div class="demo-container">
+                    <div id="charterrorshistorical" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of errors that were collected in 2014.</p>
+            </div>
+            <div class="col-md-2">
+                <h3>Comparison</h3>
+                <hr>
+                <div class="compare">
+                    <p>9/2/2014: <span class="">0,000,000</span></p>
+                    <p>9/2/2015: <span class="">0,000,000</span></p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Total Errors Prediction 2015</h3>
+                <div class="demo-container">
+                    <div id="charterrors" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of errors that we predict in 2015.</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-5">
+                <h3>Total Errors (historical)</h3>
+                <div class="demo-container">
+                    <div id="chartdiagnosticshistorical" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of disgnostic events that were collected in 2014.</p>
+            </div>
+            <div class="col-md-2">
+                <h3>Comparison</h3>
+                <hr>
+                <div class="compare">
+                    <p>9/2/2014: <span class="">0,000,000</span></p>
+                    <p>9/2/2015: <span class="">0,000,000</span></p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Total Diagnostic Prediction 2015</h3>
+                <div class="demo-container">
+                    <div id="chartdiagnostics" class="demo-placeholder"></div>
+                </div>
+                <p>The data above represents the total number of disgnostic events that we predict in 2015.</p>
+            </div>
+        </div>
+        <!-- <p class="stackControls">
+			<button>With stacking</button>
+			<button>Without stacking</button>
+		</p>
+
+		<p class="graphControls">
+			<button>Bars</button>
+			<button>Lines</button>
+			<button>Lines with steps</button>
+		</p> -->
+    </div>
+    <div id="footer">
+        b:DAP
+    </div>
+</body>
+
+</html>

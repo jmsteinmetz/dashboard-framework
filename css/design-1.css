@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'proximanovalight';
+    src: url('/fonts/proximanova-light-webfont.eot');
+    src: url('/fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/proximanova-light-webfont.woff') format('woff'), url('/fonts/proximanova-light-webfont.ttf') format('truetype'), url('/fonts/proximanova-light-webfont.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'proximanovareg';
+    src: url('/fonts/proximanova-reg-webfont.eot');
+    src: url('/fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/proximanova-reg-webfont.woff') format('woff'), url('/fonts/proximanova-reg-webfont.ttf') format('truetype'), url('/fonts/proximanova-reg-webfont.svg#webfont') format('svg');
+}
+
+body {
+    background-color: #222;
+    background-image: url('/img/background.jpg');
+    /* background-size: contain; */
+    background-repeat: repeat-y;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 0;
+    color: #777;
+    padding-top: 8px;
+}
+
+a {
+    color: #777;
+}
+
+a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+
+
+/* Masonry Layout */
+
+.grid {
+    max-width: 1200px;
+}
+
+
+/* clearfix */
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ---- grid-item ---- */
+
+.grid-item {
+    width: 160px;
+    height: 120px;
+    float: left;
+    /* vertical gutter */
+    margin-bottom: 10px;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+}
+
+.grid-item--width2 {
+    width: 330px;
+}
+
+.grid-item--width3 {
+    width: 520px;
+}
+
+.grid-item--width4 {
+    width: 780px;
+}
+
+.grid-item--height2 {
+    height: 240px;
+}
+
+.grid-item--height3 {
+    height: 370px;
+}
+
+.grid-item--height4 {
+    height: 360px;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 2px;
+    margin: 20px;
+}
+
+.navigation {
+    color: #ddd;
+    font-family: "proximanovareg"
+}
+
+.navigation h3 {
+    font-size: 14px;
+    position: relative;
+    left: 20px;
+    padding-bottom: 20px;
+}
+
+#layout {
+    margin: 0;
+    padding: 0;
+}
+
+.frame {
+    margin-top: 20px;
+}
+
+
+/* Boxes */
+
+.chart {
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    height: 170px;
+}
+
+.chart-lg {
+    height: 350px;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+}
+
+.chart-lg-wide {
+    height: 350px;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+}
+
+.infobox {
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    /* height: 170px; */
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 8px 10px 0;
+}
+
+.largenumber {
+    font-size: 35px;
+    padding-left: 8px;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.percent {
+    font-size: 12px;
+    position: relative;
+    top: -16px;
+    letter-spacing: normal;
+    left: 4px;
+    opacity: .4;
+}
+
+.bluepercentbar {
+    width: 86%;
+    height: 5px;
+    background-color: navy;
+    margin: 10px 10px;
+}
+
+.solidbluecard {
+    background-color: blue;
+    color: #ffffff;
+}
+
+.blue-fill {
+    width: 65%;
+    height: 5px;
+    background-color: white;
+    display: block;
+}
+
+.solidyellowcard {
+    background-color: yellow;
+    color: #000000;
+}
+
+.yellowpercentbar {
+    width: 86%;
+    height: 5px;
+    background-color: #E6EA0B;
+    margin: 10px 10px;
+}
+
+.yellow-fill {
+    width: 65%;
+    height: 5px;
+    background-color: #000;
+    display: block;
+}
+
+.chartbox {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.imagepost {
+    background-color: #000000;
+}
+
+.imagepost .title {
+    font-family: "proximanovalight";
+    font-size: 27px;
+    padding: 0px 40px 0 10px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.block {
+    background-size: cover;
+    filter: alpha(opacity=50);
+    /* IE */
+    -moz-opacity: 0.5;
+    /* Mozilla */
+    opacity: 0.5;
+    /* CSS3 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+
+.singlepost {
+    font-size: 10px;
+}
+
+.singlepost div {
+    padding: 8px 8px 0;
+}
+
+.singlepost .handle {
+    text-transform: uppercase;
+    display: block;
+    font-family: "proximanovareg";
+    font-size: 11px;
+}
+
+.singlepost .subtitle {
+    opacity: .6;
+    position: relative;
+    top: -3px;
+}
+
+.singlepost .post {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.singlepost .timestamp {
+    font-size: 10px;
+    display: block;
+    opacity: .6;
+    margin-top: 5px;
+}
+
+.singlepost.facebook {
+    background-color: #4B64A6;
+    color: #ffffff;
+}
+
+.singlepost.twitter {
+    background-color: #0DACE3;
+    color: #ffffff;
+}
+
+.singlepost.facebook .icon {
+    background-image: url('/img/fb.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.singlepost.twitter .icon {
+    background-image: url('/img/twitter.png');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+.mapbox {
+        background-color: #01DDDD
+    }
+    
+    .mapbox h4 {
+        color: #ffffff;
+    }
+    
+    .photobox .block {
+        background-color: #ffffff;
+        opacity: 1;
+        border-radius: 8px;
+    }
+    
+    .photobox .text h4 {
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #000000;
+        display: inline-block;
+    }
+    
+    .photobox .caption {
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 10px;
+        font-size: 11px;
+        color: #777;
+    }
+    .photobox .caption hr {
+        margin: 4px 0px;
+    }
