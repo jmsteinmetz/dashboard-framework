@@ -1,4 +1,4 @@
-# Bazaarboard Version 0.1 #
+# DashboardRobot Version 0.1 #
 
 Super lean HTML/CSS and Javascript framework for launching a dashboard using a charting library. Currently, this uses chart.js but can be adapted to using any. 
 
